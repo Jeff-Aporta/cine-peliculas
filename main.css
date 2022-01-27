@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+
+* {
+  transition: all 0.3s;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #111133;
+  color: white;
+}
+
+#encabezado {
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.2), transparent);
+}
+
+#encabezado td {
+  padding: 10px;
+}
+
+#encabezado span {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 200%;
+}
+
+.contenedor:hover {
+  transform: scale(1.3);
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid black;
+}
+
+.contenedor {
+  width: 150px;
+  height: 400px;
+  margin: 10px;
+  padding: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+}
+
+.contenedor img {
+  width: 130px;
+  height: 228;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.peliculas {
+  text-align: center;
+}
+
+.aleatoria {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: white;
+  color: deeppink;
+  font-size: 200%;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 50%;
+}
+
+.aleatoria:hover {
+  opacity: 100%;
+  color: deeppink;
+}

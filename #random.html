@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Random</title>
+</head>
+
+<body>
+     <script>
+          peliculas = JSON.parse(`
+#json_peliculas
+          `)
+
+          var e = peliculas[Math.floor(Math.random() * peliculas.length)];
+
+          lbl = e.nombre.replaceAll("(", "").replaceAll(")", "").replaceAll("-", "").replaceAll("!", "").replaceAll("?", "").replaceAll(".", " ").replaceAll(
+               "¡", "").replaceAll("¿", "").replaceAll("#", "").replaceAll("$", "").replaceAll(":", "").replaceAll("|", "").replaceAll(" ", "").replaceAll("/", "")
+
+          window.open("pelicula/" + lbl + ".html", "_self")
+     </script>
+
+</body>
+
+</html>
