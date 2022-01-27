@@ -14,6 +14,12 @@
 
      <script src="stringTools.js"></script>
      <script src="stringComparacion.js"></script>
+
+     <meta property="og:site_name" content="Cine Peliculas">
+     <meta property="og:title" content="Cine Peliculas">
+     <meta property="og:description" content="Más de 2600 peliculas">
+     <meta property="og:image" content="logo.png">
+     <link rel="icon" type="image/png" href="logo.png">
 </head>
 
 <body>
@@ -30,8 +36,10 @@
 </table>
 
      <div style="text-align: center;">
-          <input placeholder="Buscar" id="Busqueda" type="text" class="swal2-input" style="width: 50%;" onchange="ordenar()" onkeyup="if(event.keyCode == 13) ordenar()">
+          <input placeholder="Buscar" id="Busqueda" type="text" class="swal2-input" style="width: 50%;"
+               onchange="ordenar()" onkeyup="if(event.keyCode == 13) ordenar()">
      </div>
+
 
      <div class='peliculas' id='peliculas'>
         <div class="contenedor" id="RealityHigh">
@@ -24083,7 +24091,7 @@
                     contenedores.sort((a, b) => {
                          let nombre1 = a.getElementsByTagName("SPAN")[0].innerHTML;
                          let nombre2 = b.getElementsByTagName("SPAN")[0].innerHTML;
-                         return BusquedaAcertada(nombre2, PalabraBusqueda)-BusquedaAcertada(nombre1, PalabraBusqueda)
+                         return BusquedaAcertada(nombre2, PalabraBusqueda) - BusquedaAcertada(nombre1, PalabraBusqueda)
                     })
                } else {
                     contenedores.sort((a, b) => {
