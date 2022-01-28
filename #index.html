@@ -25,11 +25,16 @@
 <body>
 
      #encabezado
+     
+     <br>
 
      <div style="text-align: center;">
-          <input placeholder="Buscar" id="Busqueda" type="text" class="swal2-input" style="width: 50%;"
+          <input placeholder="Buscar" id="Busqueda" type="text" class="swal2-input" style="width: 50%;margin: 5px;"
                onchange="ordenar()" onkeyup="if(event.keyCode == 13) ordenar()">
+          <button class="btn btn-dark" onchange="ordenar()"><i class="fas fa-search"></i></button>
      </div>
+
+     <br>
 
 
      #contenido
